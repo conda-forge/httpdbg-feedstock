@@ -1,5 +1,5 @@
 {% set name = "httpdbg" %}
-{% set version = "0.28.0" %}
+{% set version = "0.28.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/httpdbg-{{ version }}.tar.gz
-  sha256: 61e6233e314b04ac55a3da6a8fb57860f62519bf35ed2545bd9788c0cc3e3b6c
+  sha256: d574cf51e0cc71e99f20aec199ec1b3e1d189ed271e78143ba8ac76c36856a3e
 
 build:
   entry_points:
