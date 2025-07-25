@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: httpdbg
-  version: "1.2.4"
+  version: "1.2.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/httpdbg-${{ version }}.tar.gz
-  sha256: 904c70145a891e18ed9e952bbfb55fa32a136d9e68b4384cba13edfa53baf899
+  sha256: b5717edc94e8d4bbc1ef29eada3a6814405fe58ebf3830eb684397b5e3691077
 
 build:
   number: 0
