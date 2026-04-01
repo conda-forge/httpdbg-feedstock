@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: httpdbg
-  version: "2.1.5"
+  version: "2.1.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/httpdbg-${{ version }}.tar.gz
-  sha256: 36b19cf80669f419759a5ecfd07c3076dc5111ef40c3b92cb78f92e869fbf098
+  sha256: 7f0925718faa0c94f5855075b168dc95bb16f9cd6826eb8449c8af9e720ea42b
 
 build:
   number: 0
@@ -34,7 +34,9 @@ tests:
       imports:
         - httpdbg
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - pyhttpdbg --help
 
